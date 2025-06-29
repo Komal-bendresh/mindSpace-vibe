@@ -14,9 +14,14 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cookieParser());
 
+const cors = require('cors');
+
+const allowedOrigins = ['https://mind-space-vibe.vercel.app'];
+
 app.use(cors({
-  origin: "https://mind-space-vibe.vercel.app/", 
-  credentials: true                
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true, 
 }));
 
 
