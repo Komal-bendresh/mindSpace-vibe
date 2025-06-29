@@ -18,9 +18,9 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
            <Route path="/chat" element={<AIChat />} />
-          <Route path="signup" element={<Signup />} />
-          <Route path="login" element={<Login />} />
-          <Route path="verify-otp" element={<VerifyOtp />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/verify-otp" element={<VerifyOtp />} />
           <Route path="/journal" element={<JournalEntry/>}/>
           <Route path="/logout" element={<LogoutButton/>}/>
         </Route>
